@@ -6,7 +6,7 @@
  * @n: The accumulated height.
  * @height: A pointer to the maximum height in the node's tree
  */
-void node_height(const binary_tree_t, size_t n, size_t *height)
+void node_height(const binary_tree_t *tree, size_t n, size_t *height)
 {
 	if (tree != NULL)
 	{
