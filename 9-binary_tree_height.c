@@ -21,7 +21,7 @@ void node_height(const binary_tree_t *tree, size_t n, size_t *height)
 	else
 	{
 		node_height(tree->left, n + 1, height);
-		node_height(tree->right);
+		node_height(tree->right, n + 1, height);
 	}
 }
 
