@@ -46,6 +46,7 @@ void free_path(binary_tree_t *path)
 {
 	binary_tree_t *tmp0 = path;
 	binary_tree_t *tmp1;
+
 	while ((tmp0 != NULL))
 	{
 		tmp1 = tmp0->right;
