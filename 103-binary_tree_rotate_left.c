@@ -15,12 +15,13 @@ binary_tree_t *binary_tree_rotate_left(binary_tree_t *tree)
 	root = tree, root_r = root->right, root_p = root->parent, new_root = root;
 	if ((root->left == NULL) && (root->right == NULL))
 	{
-		if ((root->parent != NULL) && (rot->parent->right == root))
+		if ((root->parent != NULL) && (root->parent->right == root))
 		{
 			if ((root_p->parent != NULL) && (root_p->parent->right == root_p))
-				root_p->parent->left = root;
+				root_p->parent->right = root;
+			if ((root_p->parent != NULL) && (root_p->parent->left == root_p))
 			root->parent = root_p->parent;
-			root_p->root = NULL, root_p->parent = root;
+			root_p->right = NULL, root_p->parent = root;
 			root->left = root_p;
 		}
 	}
