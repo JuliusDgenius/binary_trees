@@ -37,7 +37,7 @@ binary_tree_t *binary_tree_rotate_left(binary_tree_t *tree)
 				if (root->parent->right == root)
 					root->parent->right = new_root;
 			}
-			root->right = new_root-lc, root->parent = new_root;
+			root->right = new_root_lc, root->parent = new_root;
 			if (new_root_lc != NULL)
 				new_root_lc->parent = root;
 		}
