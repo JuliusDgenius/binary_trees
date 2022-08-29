@@ -14,7 +14,7 @@ void tree_stats(const binary_tree_t *tree, size_t n, size_t *leaves, size_t
 	{
 		if ((tree->left == NULL) && (tree->right == NULL))
 		{
-			if (leaves != NULL)	
+			if (leaves != NULL)
 			{
 				(*leaves)++;
 			}
