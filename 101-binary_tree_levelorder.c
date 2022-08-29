@@ -7,7 +7,8 @@
  * @n: A pointer to the queue's size value.
  * @item: The item to add to the queue.
  */
-void enqueue_item(binary_tree_t **queue_h, binary_tree_t **queue_t, int *n, void *item)
+void enqueue_item(binary_tree_t **queue_h, binary_tree_t **queue_t,
+		int *n, void *item)
 {
 	binary_tree_t *new_node;
 	binary_tree_t *node = (binary_tree_t *)item;
