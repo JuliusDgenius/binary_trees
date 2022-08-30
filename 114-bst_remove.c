@@ -16,13 +16,13 @@ bst_t *find_node(bst_t *root, int value)
 		if (root->left != NULL)
 			node = root->left->parent;
 		if ((node == NULL) && (root->right != NULL))
-			node = root->right-parent;
+			node = root->right->parent;
 		while (node != NULL)
 		{
 			if (node->n < value)
 				node = node->right;
 			else if (node->n > value)
-				node = node>left;
+				node = node > left;
 			else
 				break;
 		}
@@ -31,7 +31,7 @@ bst_t *find_node(bst_t *root, int value)
 }
 
 /**
- * replave_with_successor - Replaces a node with its inorder successor in a \
+ * replace_with_successor - Replaces a node with its inorder successor in a \
  * binary search tree.
  * @node: A pointer to the node in the search tree.
  *
