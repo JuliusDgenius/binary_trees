@@ -22,7 +22,7 @@ bst_t *find_node(bst_t *root, int value)
 			if (node->n < value)
 				node = node->right;
 			else if (node->n > value)
-				node = node > left;
+				node = node->left;
 			else
 				break;
 		}
