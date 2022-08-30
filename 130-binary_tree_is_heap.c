@@ -46,6 +46,7 @@ binary_tree_t *dequeue_item_2(binary_tree_t **queue_h,
 	binary_tree_t *tmp0;
 	binary_tree_t *tmp1;
 	binary_tree_t *node = NULL;
+
 	if ((queue_h != NULL) && (queue_t != NULL))
 	{
 		tmp0 = *queue_h;
@@ -157,6 +158,7 @@ int binary_tree_is_heap(const binary_tree_t *tree)
 {
 	int is_complete = 0;
 	int is_max_bin_heap = 0;
+
 	if (tree != NULL)
 	{
 		is_complete = binary_tree_is_complete(tree);
